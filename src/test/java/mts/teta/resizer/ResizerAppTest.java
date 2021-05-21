@@ -10,7 +10,6 @@ import java.io.File;
 import java.net.URL;
 import java.nio.file.Paths;
 
-import static mts.teta.resizer.utils.MD5.getMD5;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ResizerAppTest {
@@ -27,6 +26,7 @@ class ResizerAppTest {
 
     private static final String AUDIO_COVER_SOURCE_NAME = "Metallica_Kill_Em_All_1983.jpeg";
     private static final String AUDIO_COVER_TARGET_NAME = "Metallica_Kill_Em_All_1983.preview.jpeg";
+    private static final String AUDIO_COVER_TARGET_NAME2 = "Format.preview.png";
     private static final Integer AUDIO_COVER_HEIGHT = 1425;
     private static final Integer AUDIO_COVER_WIDTH = 1425;
 
@@ -114,7 +114,7 @@ class ResizerAppTest {
 //        String outputCheckSum = getMD5(absolutePathOutput);
 //        assertEquals("63b40bb7f3f303854f97509ae3d1c19e", outputCheckSum);
 //    }
-
+//
 //    @Test
 //    @Deprecated
 //    public void testSuperQuality() throws Exception {
@@ -139,7 +139,7 @@ class ResizerAppTest {
 //        String outputCheckSum = getMD5(absolutePathOutput);
 //        assertEquals("d640c71ad5bff2f5f7550a3dc6e0c76c", outputCheckSum);
 //    }
-
+//
 //    @Test
 //    @Deprecated
 //    public void testBlurringCover() throws Exception {
@@ -212,4 +212,6 @@ class ResizerAppTest {
         assertEquals("Please check params!", generatedException.getMessage());
         assertEquals(BadAttributesException.class, generatedException.getClass());
     }
+
+
 }
