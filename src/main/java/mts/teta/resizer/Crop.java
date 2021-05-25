@@ -24,7 +24,7 @@ public class Crop {
     }
     Crop(Integer[] crop, File inputFile, File outputFile, String fileParams) throws BadAttributesException {
         if(crop.length != 4 || crop[0] < 0 || crop[0] > Integer.MAX_VALUE
-                            || crop[1] < 0 ||crop[1] > Integer.MAX_VALUE ||  inputFile == null)
+                || crop[1] < 0 ||crop[1] > Integer.MAX_VALUE ||  inputFile == null)
             throw new BadAttributesException("Please check params!");
         _crop = crop;
         this.inputFile = inputFile;

@@ -88,7 +88,6 @@ public class ResizerApp extends ConsoleAttributes implements Callable<Integer> {
     public void setBlurRadius(int blur) {
         blurOp = blur;
     }
-
     public void setFormat(String format) {
         formatOp = format;
     }
